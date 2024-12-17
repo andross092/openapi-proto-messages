@@ -219,7 +219,7 @@ enum ProtoOASymbolDistanceType {
 
 /** Enum for specifying type of minimum trading commission. */
 enum ProtoOAMinCommissionType {
-    CURRENCY = 1;
+    CURRENCY_ = 1;
     QUOTE_CURRENCY = 2;
 }
 
@@ -235,7 +235,7 @@ enum ProtoOATradingMode {
 enum ProtoOASwapCalculationType {
     PIPS = 0; //Specifies type of SWAP computation as PIPS (0)
     PERCENTAGE = 1; //Specifies type of SWAP computation as PERCENTAGE (1, annual, in percent)
-    POINTS = 2; // Specifies type of SWAP computation as POINTS (2)
+    POINTS_ = 2; // Specifies type of SWAP computation as POINTS (2)
 }
 
 /** Enum for specifying access right for a trader. */
