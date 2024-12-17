@@ -138,7 +138,7 @@ message ProtoOASymbol {
     optional int64 gslCharge = 19; // Guaranteed stop loss fee.
     optional ProtoOASymbolDistanceType distanceSetIn = 20 [default = SYMBOL_DISTANCE_IN_POINTS]; // Unit of distance measure for slDistance, tpDistance, gslDistance.
     optional int64 minCommission = 21 [deprecated = true]; // Minimum commission amount per trade. Use preciseMinCommission.
-    optional ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY]; // Minimum commission Type. See ProtoOAMinCommissionType for details.
+    optional ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY_]; // Minimum commission Type. See ProtoOAMinCommissionType for details.
     optional string minCommissionAsset = 23 [default = "USD"]; // Currency for minimum commission. (USD or quote currency).
     optional int64 rolloverCommission = 24; // Administrative Fee, charged instead of Swaps if the Account is marked as a "Shariah Compliant (Swap Free)". The Administrative Fee is charged daily as USD per current open volume of Position in lots. The Account charged in the Deposit currency.
     optional int32 skipRolloverDays = 25; // Initial period before the first rolloverCommission will be charged on the account.
